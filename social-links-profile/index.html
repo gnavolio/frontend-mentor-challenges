@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- ===== STYLES ===== -->
+    <style>
+      /* ===== Font locale: Inter ===== */
+      @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+            url('../fonts/Inter-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+            url('../fonts/Inter-Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/Inter-Italic.woff2') format('woff2'),
+            url('../fonts/Inter-Italic.woff') format('woff');
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      /* ====================
+        RESET & BASE STYLES
+      ===================== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: hsl(0, 0%, 8%);
+        font-family: 'Inter', sans-serif;
+        color: hsl(0, 0%, 100%);
+      }
+
+      /* ====================
+        CONTAINER PRINCIPALE
+      ===================== */
+      .container {
+        background-color: hsl(0, 0%, 12%);
+        text-align: center;
+        margin: 10rem auto 10rem auto;
+        padding: 50px;
+        border-radius: 15px;
+        max-width: 500px;
+        max-height: 850px;
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          margin: 5rem 1rem 10% 1rem;
+          padding: 30px;
+        }
+      }
+
+      /* ====================
+        PROFILO & TESTO
+      ===================== */
+      #profile {
+        width: 150px;
+        border-radius: 50%;
+        margin: 1rem 0;
+      }
+
+      h1 {
+        font-weight: 700;
+      }
+
+      #location {
+        color: hsl(75, 94%, 57%);
+        margin: 1rem 0;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 2rem 0;
+      }
+
+      /* ====================
+        SOCIAL LINKS
+      ===================== */
+      .social-links a {
+        background-color: hsl(0, 0%, 20%);
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: large;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 1em;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .social-links a:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 20%);
+      }
+
+      /* ====================
+        ATTRIBUZIONE
+      ===================== */
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ===== PROFILO ===== -->
+    <div class="container">
+      <img 
+        src="assets/images/avatar-jessica.jpeg" 
+        alt="Immagine del profilo di Jessica Randall" 
+        id="profile"
+      >
+
+      <h1>Jessica Randall</h1>
+      <h4 id="location">London, United Kingdom</h4>
+      <p>"Front-end developer and avid reader."</p>
+
+      <!-- ===== SOCIAL LINKS ===== -->
+      <nav class="social-links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://frontendmentor.io/" target="_blank">Frontend Mentor</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+      </nav>
+    </div>
+
+    <!-- ===== CREDITS ===== -->
+    <div class="attribution">
+      Challenge by 
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>. 
+      Coded by 
+      <a 
+        href="https://github.com/gnavolio?tab=overview&from=2025-10-01&to=2025-10-31" 
+        target="_blank"
+      >
+        Gianni Navolio
+      </a>.
+    </div>
+
+  </body>
+</html>
