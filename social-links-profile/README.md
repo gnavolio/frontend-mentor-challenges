@@ -16,7 +16,7 @@ Solution for a Frontend Mentor challenge.
 
 ## ✨ Screenshot
 
-![Preview](./images/preview.jpg)
+![Preview](./images/preview.png)
 
 ## 🧠 What I learned
 
