@@ -93,3 +93,9 @@ h2 a {
 h2 a:hover {
     color: var(--bg-color);
 }
+
+@media (max-width: 450px) {
+    .card {
+        width: 80%;
+    }
+}
