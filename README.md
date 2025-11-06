@@ -33,5 +33,5 @@ These challenges help me improve my HTML, CSS, and JavaScript skills by building
 
 ## 🧑‍💻 Author
 
-**Your Name**  
+**Gianni Navolio**  
 [Frontend Mentor](https://www.frontendmentor.io/profile/yourusername) • [GitHub](https://github.com/gnavolio)
