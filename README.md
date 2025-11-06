@@ -9,8 +9,8 @@ These challenges help me improve my HTML, CSS, and JavaScript skills by building
 
 | Challenge | Demo | Code |
 |------------|------|------|
-| [Social links profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) | [Live](https://gnavolio.github.io/frontend-mentor-challenges/social-links-profile) | [Code](./social-links-profile) |
-| [Blog Preview Card](https://yourusername.github.io/frontend-mentor-challenges/blog-preview-card) | [Live]() | [Code]() |
+| [Social links profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) | [Live](https://gnavolio.github.io/frontend-mentor-challenges/social-links-profile) | [Code](https://github.com/gnavolio/frontend-mentor-challenges/tree/main/social-links-profile) |
+| [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) | [Live]() | [Code]() |
 
 ---
 
