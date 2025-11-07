@@ -4,7 +4,7 @@ Solution for a Frontend Mentor challenge.
 
 ## 🔗 Links
 
-- **Live Site URL:** [https://gnavolio.github.io/frontend-mentor-challenges/nft-preview-card](https://gnavolio.github.io/frontend-mentor-challenges/NFT-preview-card)
+- **Live Site URL:** [https://gnavolio.github.io/frontend-mentor-challenges/nft-preview-card](https://gnavolio.github.io/frontend-mentor-challenges/NFT-preview-card-component)
 - **Challenge URL:** [https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
 
 ## 🧰 Built with
