@@ -1,0 +1,164 @@
+
+:root{
+    --blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --bg-color: hsl(217, 54%, 11%);
+    --bg-card: hsl(216, 50%, 16%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-bold: 400;
+    --font-bold-xl: 600;
+
+    
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background-color: var(--bg-color);
+    color: var(--blue);
+}
+
+#title{
+    color: var(--white);
+    font-weight: var(--font-bold-xl);
+    font-size: x-large;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#title:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+#ethereum{
+    color: var(--cyan);
+    font-weight: var(--font-bold);
+}
+
+#clock{
+    font-weight: var(--font-bold);
+}
+
+.card{
+    
+    background-color: var(--bg-card);
+
+    width: 360px;
+
+    border-radius: 1em;
+    padding: 1.2em;
+
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+}
+
+.image { 
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 1em; 
+    display:block; 
+}
+
+.image > img {
+    width:100%; 
+    display:block; 
+}
+
+#eye { 
+    position:absolute; 
+    inset:0; 
+    display:flex; justify-content:center; 
+    align-items:center; 
+    background:hsla(178,100%,50%,0.45); 
+    opacity:0; 
+    transition:opacity .5s ease; 
+}
+
+.image:hover #eye { 
+    opacity:1; 
+}
+
+#eye img { 
+    width:48px; 
+    height:48px; 
+}
+
+.info{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+.orizzontal-flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+hr{
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+
+    border: 1px solid hsl(215, 51%, 70%, 0.25);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.creator>img{
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 2em;
+    margin: 10px 10px 10px 0px;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.attribution { 
+    position: fixed;
+    bottom: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#name{
+    color: var(--white);
+}
+
+#name:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+@media (max-width: 460px){
+    .card{
+        width: 80%;
+    }
+}
