@@ -4,7 +4,7 @@ Solution for a Frontend Mentor challenge.
 
 ## 🔗 Links
 
-- **Live Site URL:** [https://gnavolio.github.io/frontend-mentor-challenges/order-summary-card](https://gnavolio.github.io/frontend-mentor-challenges/order-summary-card)  
+- **Live Site URL:** [https://gnavolio.github.io/frontend-mentor-challenges/order-summary-card](https://gnavolio.github.io/frontend-mentor-challenges/order-summary-component/)  
 - **Challenge URL:** [https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 
 ## 🧰 Built with
