@@ -1,0 +1,158 @@
+:root {
+    --bg-page: hsl(225, 100%, 94%);
+    --bg-button: hsl(245, 75%, 52%);
+    --bg-card: hsl(0, 0%, 100%);
+    --bg-plan: hsl(225, 100%, 98%);
+
+    --text-color: hsl(224, 23%, 55%);
+    --title-color: hsl(223, 47%, 23%);
+
+    --f-size: 16px;
+    --fw-small: 500;
+    --fw-medium: 700;
+    --fw-large: 900;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: var(--f-size);
+    font-weight: var(--fw-small);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100lvh;
+
+    background-color: var(--bg-page);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw-large {
+    font-weight: var(--fw-large);
+    font-size: x-large;
+}
+
+.text-dark {
+    color: var(--title-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--bg-card);
+
+    border-radius: 2em;
+    overflow: hidden;
+    width:min-content;
+    gap: 2em;
+
+    box-shadow: 0 2em 2em 2em rgb(198, 208, 247, 0.5);
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 0 2em 2em 2em;
+    gap: 2em;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 1.5em;
+
+    background-color: var(--bg-plan);
+
+    border-radius: 0.5em;
+}
+
+.cost {
+    display:inline-flex;
+    column-gap: 1em;
+}
+
+.plan>a {
+    color: var(--bg-button);
+}
+
+.plan>a:hover {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: var(--f-size);
+
+    cursor: pointer;
+}
+
+#applay {
+    background-color: var(--bg-button);
+    color: var(--bg-card);
+
+    padding: 1em;
+    width: 100%;
+
+    border-radius: 0.5em;
+}
+
+#cancel {
+    color: var(--text-color);
+}
+
+#applay:hover {
+    opacity: 0.5;
+}
+
+#cancel:hover {
+    color: var(--title-color);
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 500px){
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
