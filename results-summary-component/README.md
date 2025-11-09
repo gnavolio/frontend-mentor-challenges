@@ -19,10 +19,10 @@ Solution for a Frontend Mentor challenge.
 ## ✨ Screenshot
 
 - ### Desktop  
-  ![Preview](./assets/images/preview-desktop.png)
+  ![Preview](./images/preview-desktop.png)
 
 - ### Smartphone  
-  ![Preview](./assets/images/preview-mobile.png)
+  ![Preview](./images/preview-mobile.png)
 
 ## 🧠 What I learned
 
