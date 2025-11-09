@@ -1,0 +1,248 @@
+:root {
+    --red: hsl(0, 100%, 67%);
+    --yellow: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --blue: hsl(234, 85%, 45%);
+
+    --light-gradient: hsl(252, 100%, 67%);
+    --dark-gradient: hsl(241, 81%, 54%);
+
+    --full-violet: hsla(256, 72%, 46%, 1);
+    --ful-persian: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --bg-page: hsl(221, 100%, 96%);
+
+    --tx-light: hsla(241, 100%, 89%, 0.6);
+    --tx-dark: hsl(224, 30%, 27%);
+
+    --button-color: hsl(224, 30%, 27%);
+
+    --tx-size: 18px;
+
+    --tx-small: 500;
+    --tx-medium: 700;
+    --tx-large: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: var(--tx-small);
+    font-size: var(--tx-size);
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: var(--bg-page);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+span {
+    color: var(--tx-light);
+}
+
+.wrapper {
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.first-container {
+    background: linear-gradient(var(--light-gradient), var(--dark-gradient));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 1em;
+    padding: 2em;
+    width: 320px;
+
+    border-radius: 2em;
+}
+
+.first-container .title {
+    color: var(--tx-light);
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.point-container {
+    background: linear-gradient(var(--dark-gradient), var(--light-gradient));
+    width: fit-content;
+    border-radius: 50%;
+    padding: 1.5em 2.5em;
+}
+
+.point {
+    font-size: 5em;
+    font-weight: var(--tx-large);
+    color: var(--white);
+}
+
+.point-scale {
+    font-size: smaller;
+    color: var(--tx-light);
+}
+
+.point-title {
+    font-size: larger;
+    font-weight: var(--tx-medium);
+    color: var(--white);
+}
+
+.point-description {
+    color: var(--tx-light);
+}
+
+.title {
+    font-weight: var(--tx-medium);
+    font-size: larger;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2em;
+
+    width: 320px;
+    height: 100%;
+    gap: 1.5em
+}
+
+.metric-container {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    display: grid;
+    gap: 0.8em;
+}
+
+.metric {
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.5em;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.metric p {
+    font-weight: var(--tx-medium);
+    display: flex;
+    align-items: center;
+}
+
+#bg-red{
+    background: hsla(0, 100%, 67%, 0.1);
+}
+
+#bg-yellow{
+    background: hsla(39, 100%, 56%, 0.1);
+}
+
+#bg-green{
+    background: hsla(166, 100%, 37%, 0.1);
+}
+
+#bg-blue{
+    background: hsla(234, 85%, 45%, 0.1);
+}
+
+#red {
+    color: var(--red);
+}
+
+#yellow {
+    color: var(--yellow);
+}
+
+#green {
+    color: var(--green);
+}
+
+#blue {
+    color: var(--blue);
+}
+
+button {
+    width: 100%;
+    background: var(--button-color);
+    border: none;
+    font-weight: var(--tx-medium);
+    color: var(--white);
+    padding: 1.5em;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(var(--light-gradient), var(--dark-gradient));
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (width < 500px) {
+    .wrapper {
+        flex-direction: column;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .first-container {
+        border-radius: 0 0 2em 2em;
+        width: 100%;
+        padding: 3em;
+        margin: 0;
+    }
+
+    .point-container {
+        scale: 0.8;
+    }
+
+    .attribution { 
+        position: fixed;
+        bottom: 10px;
+    }
+
+    .second-container{
+        width: 100%;
+    }
+
+    .metric-container {
+        margin: 0;
+    }
+
+    .metric {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
