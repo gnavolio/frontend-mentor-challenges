@@ -4,7 +4,7 @@ Solution for a Frontend Mentor challenge.
 
 ## 🔗 Links
 
-- **Live Site URL:** [https://gnavolio.github.io/frontend-mentor-challenges/qr-code-component](https://gnavolio.github.io/frontend-mentor-challenges/qr-code-component)  
+- **Live Site URL:** [https://gnavolio.github.io/frontend-mentor-challenges/product-preview-card-component/](https://gnavolio.github.io/frontend-mentor-challenges/product-preview-card-component/)  
 - **Challenge URL:** [https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
 ## 🧰 Built with
