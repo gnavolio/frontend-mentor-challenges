@@ -4,7 +4,7 @@ Solution for a Frontend Mentor challenge.
 
 ## 🔗 Links
 
-- **Live Site URL:** [https://gnavolio.github.io/frontend-mentor-challenges/social-proof-section](https://gnavolio.github.io/frontend-mentor-challenges/social-proof-section)  
+- **Live Site URL:** [https://gnavolio.github.io/frontend-mentor-challenges/social-proof-section](https://gnavolio.github.io/frontend-mentor-challenges/social-proof-section-master/)  
 - **Challenge URL:** [https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
 
 ## 🧰 Built with
