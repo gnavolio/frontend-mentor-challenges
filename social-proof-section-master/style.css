@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+  /* Primary */
+  --clr-primary-dark: hsl(300, 43%, 22%);
+  --clr-primary-soft: hsl(333, 80%, 67%);
+
+  /* Neutral */
+  --clr-neutral-dark: hsl(303, 10%, 53%);
+  --clr-neutral-light: hsl(300, 24%, 96%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* Text */
+  --fs: 15px;
+  --fw-s: 400;
+  --fw-m: 500;
+  --fw-l: 700;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "League Spartan", sans-serif;
+    font-size: var(--fs);
+    background: var(--clr-white);
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "description rates"
+    "opinions opinions";
+
+    width: 90%;
+    gap: 2em;
+}
+
+.description>h1 {
+    color: var(--clr-primary-dark);
+    font-size: 3em;
+    width: 70%;
+}
+
+.description>p {
+    margin-top: 2em;
+    line-height: 1.6em;
+}
+
+.description>p {
+    color: var(--clr-neutral-dark);
+}
+
+.rates {
+    grid-area: rates;
+}
+
+.rates>div:nth-child(1) {
+    transform: translateX(-30px);
+}
+
+.rates>div:nth-child(2) {
+    transform: translateX(0px);
+}
+
+.rates>div:nth-child(3) {
+    transform: translateX(30px);
+}
+
+.rates>div {
+    background-color: var(--clr-neutral-light);
+    border-radius: .5em;
+    padding: 1em 2em;
+    margin: 1em;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.rates>div>div {
+    display: flex;
+    gap: 0.2em;
+}
+
+.rates>div>p {
+    margin-left: 2em;
+    color: var(--clr-primary-dark);
+    font-weight: var(--fw-l);
+}
+
+.opinions {
+    grid-area: opinions;
+    display: flex;
+    gap: 1em;
+}
+
+.buyer:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.buyer:nth-child(2) {
+  transform: translateY(0);
+}
+
+.buyer:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.buyer {
+    background-color: var(--clr-primary-dark);
+    border-radius: 1em;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1em;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile>img {
+    border-radius: 50%;
+    width: 2.5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.profile .name {
+    font-weight: var(--fw-l);
+}
+
+.profile .name,
+.buyer>p {
+    color: var(--clr-neutral-light);
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+}
+
+.profile .status {
+    color: var(--clr-primary-soft);
+}
+
+#bg-pattern-top,
+#bg-pattern-bottom {
+  position: absolute;
+  z-index: -1;
+}
+
+#bg-pattern-top {
+    top: 0;
+    left: 0;
+}
+
+#bg-pattern-bottom {
+    bottom: 0;
+    right: 0;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+
+    grid-area: footer;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 700px) {
+    body {
+        margin-top: 5em;
+        padding: .5em;
+        width: auto;
+        height: auto;
+    }
+
+    main {
+        display: block;
+    }
+
+    .description>h1 {
+        width: 100%;
+        text-align: center;
+        line-height: 0.8;
+    }
+
+    .description>p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .rates {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 2em;
+    }
+
+    .rates>div:nth-child(1) {
+        transform: translateX(0px);
+    }
+
+    .rates>div:nth-child(2) {
+        transform: translateX(0px);
+    }
+
+    .rates>div:nth-child(3) {
+        transform: translateX(0px);
+    }
+
+    .rates>div {
+        width: 95%;
+        margin: .5em;
+        flex-direction: column;
+    }
+
+    .rates>div>p {
+        margin: 0;
+    }
+
+    .opinions {
+        display: block;
+        margin-top: 4em;
+    }
+
+    .profile>img {
+        width: 3em;
+    }
+
+    .buyer {
+        margin-bottom: 1em;
+    }
+
+    .attribution {
+        position: static;
+        margin-top: 1em;
+    }
+}
